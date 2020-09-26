@@ -4,29 +4,27 @@ wget https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.
 
 sudo dpkg -i packages-microsoft-prod.deb
 
-sudo apt-get update; \
-  sudo apt-get install -y apt-transport-https && \
-  sudo apt-get update && \
-  sudo apt-get install -y dotnet-sdk-3.1
+```sudo apt-get update; \```
+```  sudo apt-get install -y apt-transport-https && \```
+```  sudo apt-get update && \```
+```  sudo apt-get install -y dotnet-sdk-3.1```
 
 
 # Create project
 
-git clone https://github.com/maincoon/CNRGList.git
-
-cd CNRGList
-
-dotnet build
+```git clone https://github.com/maincoon/CNRGList.git```
+```cd CNRGList```
+```dotnet build```
 
 # Running
 
-dotnet run
-Usage: CNRGList <num> <min> <max>
+```dotnet run```
+```Usage: CNRGList <num> <min> <max>```
 
 # Creating 10 addresses with keys min 50 max 60
 
-dotnet run 10 50 60
+```dotnet run 10 50 60```
 
 # Same as CSV file list.csv
 
-dotnet run 10 50 60 | head -n -1 > list.csv
+```dotnet run 10 50 60 | head -n -1 > list.csv```
