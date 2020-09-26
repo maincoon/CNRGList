@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "CNRGList": {
+      "commandName": "Project",
+      "commandLineArgs": "10 5 20"
+    }
+  }
+}
