@@ -26,3 +26,7 @@ Usage: CNRGList <num> <min> <max>
 # Creating 10 addresses with keys min 50 max 60
 
 dotnet run 10 50 60
+
+# Same as CSV file list.csv
+
+dotnet run 10 50 60 | head -n -1 > list.csv
